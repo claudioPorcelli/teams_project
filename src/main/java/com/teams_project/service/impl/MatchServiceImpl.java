@@ -36,6 +36,7 @@ public class MatchServiceImpl implements MatchService {
 
     @Override
     public void deleteMatch(Integer idMatch) {
+        repo.deleteById(idMatch);
 
     }
 }
